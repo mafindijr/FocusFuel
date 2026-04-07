@@ -1,0 +1,18 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle for focus -->
+  <circle cx="30" cy="30" r="25" fill="#4F46E5" opacity="0.1"/>
+  
+  <!-- Focus/target icon -->
+  <circle cx="30" cy="30" r="20" fill="none" stroke="#4F46E5" stroke-width="2"/>
+  <circle cx="30" cy="30" r="10" fill="none" stroke="#4F46E5" stroke-width="1"/>
+  <line x1="30" y1="10" x2="30" y2="20" stroke="#4F46E5" stroke-width="1"/>
+  <line x1="50" y1="30" x2="40" y2="30" stroke="#4F46E5" stroke-width="1"/>
+  <line x1="30" y1="50" x2="30" y2="40" stroke="#4F46E5" stroke-width="1"/>
+  <line x1="10" y1="30" x2="20" y2="30" stroke="#4F46E5" stroke-width="1"/>
+  
+  <!-- Text -->
+  <text x="60" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1F2937">FocusFuel</text>
+  
+  <!-- Tagline -->
+  <text x="60" y="50" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">Stay Accountable</text>
+</svg>

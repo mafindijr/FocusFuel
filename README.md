@@ -1,5 +1,9 @@
 # 🚀 FocusFuel Landing Page
 
+<p align="center">
+  <img src="assets/logo.svg" alt="FocusFuel Logo" width="200">
+</p>
+
 Hey there! This is a sleek, responsive landing page I built for FocusFuel, an AI-powered tool that helps folks stay on track and actually knock out their daily goals.
 
 I put this together during the Knowinly Internship in the Frontend Track – specifically for Stage One. I really focused on keeping things semantic, the layout clean, and following solid frontend practices.
