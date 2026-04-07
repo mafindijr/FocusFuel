@@ -1,4 +1,4 @@
-# 🚀 FocusFuel Landing Page
+# FocusFuel Landing Page
 
 <p align="center">
   <img src="assets/logo.svg" alt="FocusFuel Logo" width="200">
@@ -14,7 +14,6 @@ I put this together during the Knowinly Internship in the Frontend Track – spe
 
 ![FocusFuel Screenshot](assets/Screenshot.png)
 
-> 📌 *Pro tip:* Place your screenshot file at `assets/Screenshot.png` so the image renders correctly.
 
 ---
 
