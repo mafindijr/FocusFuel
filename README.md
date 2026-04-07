@@ -8,9 +8,9 @@ I put this together during the Knowinly Internship in the Frontend Track – spe
 
 ## 📸 Project Screenshot
 
-![FocusFuel Screenshot](assets/screenshot.png)
+![FocusFuel Screenshot](assets/Screenshot.png)
 
-> 📌 *Pro tip:* Place your screenshot file at `assets/screenshot.png` so the image renders correctly.
+> 📌 *Pro tip:* Place your screenshot file at `assets/Screenshot.png` so the image renders correctly.
 
 ---
 
