@@ -1,4 +1,4 @@
-# 🚀 FocusFuel Landing Page
+# FocusFuel Landing Page
 
 Hey there! This is a sleek, responsive landing page I built for FocusFuel, an AI-powered tool that helps folks stay on track and actually knock out their daily goals.
 
