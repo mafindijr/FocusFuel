@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FocusFuel keeps you accountable with daily AI check-ins so you actually get things done. Stop procrastinating and start finishing with our habit-building platform.">
+  <title>FocusFuel - Stay Accountable</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.closest = {
+      colors: {
+        primary: '#3b82f6',
+        primaryHover: '#2563eb'
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="text-gray-800 antialiased">
+  <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="#" class="text-xl font-bold text-gray-900">FocusFuel</a>
+        
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Features</a>
+          <a href="#pricing" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Pricing</a>
+          <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Contact</a>
+        </div>
+        
+        <div class="hidden md:block">
+          <a href="#contact" class="btn-primary bg-blue-500 hover:bg-blue-600">Get Started</a>
+        </div>
+        
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600 hover:text-gray-900 transition-colors" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col space-y-3">
+          <a href="#features" class="text-gray-600 hover:text-gray-900 py-2 transition-colors duration-200">Features</a>
+          <a href="#pricing" class="text-gray-600 hover:text-gray-900 py-2 transition-colors duration-200">Pricing</a>
+          <a href="#contact" class="text-gray-600 hover:text-gray-900 py-2 transition-colors duration-200">Contact</a>
+          <a href="#contact" class="btn-primary bg-blue-500 hover:bg-blue-600 text-center">Get Started</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+          Stop Procrastinating.<br class="sm:hidden"><span class="text-blue-500"> Start Finishing.</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+          FocusFuel keeps you accountable with daily AI check-ins so you actually get things done.
+        </p>
+        <form id="hero-form" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+          <input 
+            type="email" 
+            id="hero-email"
+            placeholder="Enter your email" 
+            class="form-input flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50"
+            required
+          >
+          <button type="submit" class="btn-primary bg-blue-500 hover:bg-blue-600 whitespace-nowrap">
+            Get Early Access
+          </button>
+        </form>
+        <p id="hero-message" class="mt-4 text-sm hidden"></p>
+      </div>
+    </section>
+
+    <section id="features" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12">How It Works</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <article class="feature-card bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+            <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Daily Check-ins</h3>
+            <p class="text-gray-600">Simple daily questions to keep you focused on what matters most. Build consistency with 5-minute daily sessions.</p>
+          </article>
+          
+          <article class="feature-card bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+            <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Smart Reminders</h3>
+            <p class="text-gray-600">Intelligent notifications that adapt to your schedule. Never miss a beat with personalized reminder timing.</p>
+          </article>
+          
+          <article class="feature-card bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+            <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Brutal Accountability</h3>
+            <p class="text-gray-600">No excuses. Get honest feedback on your progress and stay accountable to your goals.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20">
+      <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Join 1,000+ people building better habits</h2>
+        <p class="text-gray-600 mb-8">Start your journey to productivity today.</p>
+        <form id="signup-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <input 
+            type="email" 
+            id="signup-email"
+            placeholder="Enter your email" 
+            class="form-input flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50"
+            required
+          >
+          <button type="submit" class="btn-primary bg-blue-500 hover:bg-blue-600 whitespace-nowrap">
+            Join Now
+          </button>
+        </form>
+        <p id="signup-message" class="mt-4 text-sm hidden"></p>
+      </div>
+    </section>
+
+    <section id="pricing" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12">Simple Pricing</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <article class="pricing-card bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Free Plan</h3>
+            <p class="text-4xl font-bold text-gray-900 mb-4">$0<span class="text-lg font-normal text-gray-600">/month</span></p>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Basic check-ins
+              </li>
+            </ul>
+          </article>
+          
+          <article class="pricing-card bg-white p-8 rounded-2xl shadow-lg border-2 border-blue-500 relative">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-500 text-white text-sm font-medium px-3 py-1 rounded-full">
+              Most Popular
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Pro Plan</h3>
+            <p class="text-4xl font-bold text-gray-900 mb-4">$9<span class="text-lg font-normal text-gray-600">/month</span></p>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Smart reminders
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Insights & analytics
+              </li>
+            </ul>
+          </article>
+          
+          <article class="pricing-card bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Lifetime Deal</h3>
+            <p class="text-4xl font-bold text-gray-900 mb-4">$49<span class="text-lg font-normal text-gray-600"> one-time</span></p>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                All features forever
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-400">&copy; 2026 FocusFuel. All rights reserved.</p>
+        <nav class="flex gap-6">
+          <a href="#features" class="text-gray-400 hover:text-white transition-colors duration-200">Features</a>
+          <a href="#pricing" class="text-gray-400 hover:text-white transition-colors duration-200">Pricing</a>
+          <a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
