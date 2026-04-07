@@ -91,7 +91,7 @@ FocusFuel/
 
 ## 🌍 Live Demo
 
-👉 [Drop your live link here]
+👉 [View Live Demo](https://focusfuelc1.netlify.app)
 
 ---
 
